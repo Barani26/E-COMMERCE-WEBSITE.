@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>STOIIC</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="STOIC.CSS">
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>STOIC</h1>
+        <div class="navbarlinks">
+            <p class="navbarlink"><a href="STOIC.HTML">HOME</a></p>
+            <p class="navbarlink"><a href="collection.html">COLLECTIONS</a></p>
+            <p class="navbarlink"><a href="contact.html">CONTACT</a></p>
+        </div>
+
+        <div class="navbartoggle">
+            <i class="fa-solid fa-bars" onclick="sideopen()">open</i>
+
+        </div>
+    </nav>
+    <!-- SIDE NAV -->
+    <div class="sidenavbar">
+        <p style="text-align: right">
+            <i class="fa-solid fa-xmark" onclick="sideclose()" style="color: white; font-size: 30px;"></i>
+        </p>
+        <div class="sidenavbarlinks">
+            <p class="sidenavbarlink"><a href="STOIC.HTML">HOME</a></p>
+            <p class="sidenavbarlink"><a href="collection.html">COLLECTIONS</a></p>
+            <p class="sidenavbarlink"><a href="contact.html">CONTACT</a></p>
+        </div>
+    </div>
+
+
+    <!-- PRODUCT DETAILS -->
+    <DIV class="bgg">
+    <div class="productsection">
+        <form class="productsearch">
+            <input id="searche" placeholder="Search" type="text">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+    </div>
+    <CENter>
+        <H1 style="margin: 20px;">INDULGE IN THE RANGE OF FASHION</H1>
+    </CENter>
+    <div class="product" id="product">
+        <div class="productss">
+            <img height="300" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlrmqfaUg7BlOD-Lz6kpyZ4DJ1kEhV8QXl0g&s" alt="OVERSIZED">
+            <p>OVERSIZED</p>
+        </div>
+        <div class="productss">
+            <img height="300px" width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ow2nvtgy2ypJdkB8PkdpiunFGSDjQFKefg&s" alt="fashion">
+            <p>SWEATSHIRT</p>
+        </div>
+        <div class="productss">
+            <img height="300" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5riBTMVKaftM6hTcJjEZF1TN1U1Y-6kODWw&s" alt="CAP">
+            <p>CAP</p>
+        </div>
+        <div class="productss">
+            <img height="300" width="300" src="data:image/jpeg;base64,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" alt="SHOE">
+            <p>SHOE</p>
+        </div>
+        <div class="productss">
+            <img height="300" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzu7QtZ46D6q4C6HEtDJdWMwTyz0lzXYv6SA&s" alt="HOODIES">
+            <p>TEES</p>
+        </div>
+        <div class="productss">
+            <img width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTleHKKNFtuI2X_9vtNiGb1XQE6mna5FS89A&s" alt="SHORTS">
+            <p>SHORTS</p>
+        </div>
+        <div class="productss">
+            <img  height="300px" width="300px" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTEpjuDSU8SllkBw5vB2wqf8B4zozh6Kk9Ai5BhVsqV1Olf4BgaHLcq_aNyccH85iji2_006VI1rYt07o1Ng_p8J-9bsBoWwCMHCGArkGifsbjhQM6FEGIB7w&usqp=CAE" alt="WATCH">
+            <p>WATCHES</p>
+        </div>
+        <div class="productss">
+            <img height="300" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFw2usgr7noO8xoawh3jS31WMSFd0t0hqAig&s" alt="RING">
+            <p>RINGS</p>
+        </div>
+       
+    </div>
+    </DIV>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footcon">
+            <h2>STOIC</h2>
+            <p>We Serve What You Need | Everyone Deserves Fashion</p>
+            <p><i class="fa-brands fa-instagram">| </i><i class="fa-brands fa-twitter">| </i>
+                <i class="fa-brands fa-facebook"> </i>
+            </p>
+            <p>&copy;2024 stoicstyles.com</p>
+        </div>
+
+    </div>
+
+ 
+    <script src="STOIC.JS"></script>
+</body>
+
+</html>
